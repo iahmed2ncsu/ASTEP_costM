@@ -407,7 +407,7 @@ with tab3:
 with tab4:
     st.title("Run Simulation")
     
-    @st.experimental_memo(suppress_st_warning = True)
+    @st.experimental_memo()
     def computation():
         start = time.time()
         levelized_cost, carbon_intensity = model(df1,df2,df3,df4,df5,df_parameter)
