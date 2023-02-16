@@ -1,0 +1,6 @@
+reduce
+numpy
+pandas
+streamlit
+plotly.express
+Image
