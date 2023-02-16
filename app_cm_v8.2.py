@@ -211,21 +211,21 @@ except NameError: df_parameter = None
 
 # %% Read hard-coded files
 #working directory. Change if necessary
-direct = "G:\\.shortcut-targets-by-id\\1m_vWVSXCB3I9mQi1vuOqJsIjp9HUbG1y\\Rail Decarbonization\\Task 5 Cost Analysis\\Python code\\cost_model_v1\\"
+#direct = "G:\\.shortcut-targets-by-id\\1m_vWVSXCB3I9mQi1vuOqJsIjp9HUbG1y\\Rail Decarbonization\\Task 5 Cost Analysis\\Python code\\cost_model_v1\\"
 
-train_pre = pd.read_csv(f"{direct}Input\\a_data_file_train_consist.csv")
-energ_pre = pd.read_csv(f"{direct}Input\\b_data_file_energy_consumption.csv")
-inf_pre = pd.read_csv(f"{direct}Input\\c_data_file_infrastructure.csv")
-price_pre = pd.read_csv(f"{direct}Input\\d_data_file_energy_price.csv")
-dem_pre = pd.read_csv(f"{direct}Input\\e_data_file_freight_demand.csv")
-param_pre = pd.read_csv(f"{direct}Input\\f_data_file_parameter.csv")
+train_pre = pd.read_csv("a_data_file_train_consist.csv")
+energ_pre = pd.read_csv("b_data_file_energy_consumption.csv")
+inf_pre = pd.read_csv("c_data_file_infrastructure.csv")
+price_pre = pd.read_csv("d_data_file_energy_price.csv")
+dem_pre = pd.read_csv("e_data_file_freight_demand.csv")
+param_pre = pd.read_csv("f_data_file_parameter.csv")
 
 #Read hard-coded pdf files
-with open(f"{direct}Cost Model Documentation Report.pdf", "rb") as pdf_file:
+with open("Cost Model Documentation Report.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 #add sample output image. This image is hardcoded. Please change the directory based on where this image files is stored in your pc.
-image = Image.open(f"{direct}CM Sample Output.png")
+image = Image.open("CM Sample Output.png")
 
 
 
